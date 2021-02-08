@@ -1,0 +1,13 @@
+{ 
+   "MTS_MDOT_F405RGT6": {
+        "inherits": ["Target"],
+        "core": "Cortex-M4F",
+        "supported_toolchains": ["ARM", "uARM", "GCC_ARM", "IAR"],
+        "extra_labels": ["STM", "STM32F4", "STM32F405RG"],
+        "is_disk_virtual": true,
+        "macros": ["HSE_VALUE=26000000", "OS_CLOCK=48000000"],
+        "progen": {"target": "mts-mdot-f405rg"},
+        "device_has": ["ANALOGIN", "ANALOGOUT", "I2C", "I2CSLAVE", "INTERRUPTIN", "PORTIN", "PORTINOUT", "PORTOUT", "PWMOUT", "RTC", "SERIAL", "SLEEP", "SPI", "SPISLAVE", "STDIO_MESSAGES"],
+        "release_versions": ["2"]
+    }
+}
